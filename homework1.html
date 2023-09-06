@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+    }
+  </style>
   <head>
     <meta charset="UTF-8" />
-    <title> 应聘面试登记表</title>
+    <title>应聘面试登记表</title>
   </head>
   <body>
-    <h1>应聘面试登记表 </h1>
-    <br>
-    <table border="1">
+    <table width="608px">
       <tr>
-        <th colspan="7">基本信息</th>
+        <th style="background-color: gray"><h1>应聘面试登记表</h1></th>
+      </tr>
+    </table>
+    <br />
+    <table width="608px" border="1">
+      <tr>
+        <th colspan="7" style="text-align: left; background-color: gray">
+          基本信息
+        </th>
       </tr>
       <tr>
         <th>姓名</th>
-        <td></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <th>性别</th>
         <td></td>
         <th>出生日期</th>
-        <td> / /</td>
-        <td rowspan="5"> 个人照片 </td>
+        <td></td>
+        <td rowspan="5" style="text-align: center">个人照片</td>
       </tr>
       <tr>
         <th>政治面貌</th>
@@ -60,7 +73,9 @@
         <td></td>
       </tr>
       <tr>
-        <th colspan="7"> 教育经历 </th>
+        <th colspan="7" style="text-align: left; background-color: gray">
+          教育经历
+        </th>
       </tr>
       <tr>
         <th colspan="2">起止时间</th>
@@ -75,7 +90,9 @@
         <td></td>
       </tr>
       <tr>
-        <th colspan="7"> 教育经历 </th>
+        <th colspan="7" style="text-align: left; background-color: gray">
+          工作经历
+        </th>
       </tr>
       <tr>
         <th colspan="2">起止时间</th>
@@ -94,6 +111,106 @@
         <td colspan="2"></td>
         <td colspan="2"></td>
         <td></td>
+      </tr>
+      <tr>
+        <th rowspan="2">离职原因</th>
+        <td colspan="6">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="6">&nbsp;</td>
+      </tr>
+      <tr>
+        <th colspan="7" style="text-align: left; background-color: gray">
+          家庭信息
+        </th>
+      </tr>
+      <tr>
+        <th>姓名</th>
+        <th>称谓</th>
+        <th>年龄</th>
+        <th colspan="3">工作单位</th>
+        <th>联系方式</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td colspan="3"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td colspan="3"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>紧急联系人</th>
+        <td colspan="2"></td>
+        <th colspan="2">与紧急联系人关系</th>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <th colspan="7" style="text-align: left; background-color: gray">
+          录用情况
+        </th>
+      </tr>
+      <tr>
+        <th>所属部门</th>
+        <th>职务</th>
+        <th>到岗时间</th>
+        <th>试用期薪资</th>
+        <th>转正薪资</th>
+        <th>上级领导</th>
+        <th>部门负责人</th>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>人事经理意见:</th>
+        <td colspan="3"></td>
+        <th>总经理意见:</th>
+        <td colspan="2"></td>
+      </tr>
+    </table>
+    <br />
+    <form>
+      是否因违法犯罪受过处理:
+      <label>
+        <input type="radio" name="crime" value="yes" />
+        是
+      </label>
+      <label>
+        <input type="radio" name="crime" value="no" />
+        否
+      </label>
+      &nbsp;&nbsp;&nbsp; 是否有数额过万的未清偿债务:
+      <label>
+        <input type="radio" name="debt" value="yes" />
+        是
+      </label>
+      <label>
+        <input type="radio" name="debt" value="no" />
+        否
+      </label>
+    </form>
+    <br />
+    <p>本人承诺以上信息均为真实有效，如若造假或情况不实，自愿承担一切后果</p>
+    <br />
+    <table width="608px" border="0">
+      <tr>
+        <td style="text-align: right">
+          本人签名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          日期:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
       </tr>
     </table>
   </body>
