@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <style>
-    table,
-    th,
-    td {
+    table{
       border-collapse: collapse;
+      margin: 0 auto;
     }
   </style>
   <head>
@@ -182,29 +181,39 @@
       </tr>
     </table>
     <br />
-    <form>
-      是否因违法犯罪受过处理:
-      <label>
-        <input type="radio" name="crime" value="yes" />
-        是
-      </label>
-      <label>
-        <input type="radio" name="crime" value="no" />
-        否
-      </label>
-      &nbsp;&nbsp;&nbsp; 是否有数额过万的未清偿债务:
-      <label>
-        <input type="radio" name="debt" value="yes" />
-        是
-      </label>
-      <label>
-        <input type="radio" name="debt" value="no" />
-        否
-      </label>
+   <form>
+    <table width="608px" border="0">
+      <tr>
+        <td>
+          是否因违法犯罪受过处理:
+          <label>
+            <input type="radio" name="crime" value="yes" />
+            是
+          </label>
+          <label>
+            <input type="radio" name="crime" value="no" />
+            否
+          </label>
+        </td>
+        <td>
+          是否有数额过万的未清偿债务:
+          <label>
+            <input type="radio" name="debt" value="yes" />
+            是
+          </label>
+          <label>
+            <input type="radio" name="debt" value="no" />
+            否
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          本人承诺以上信息均为真实有效，如若造假或情况不实，自愿承担一切后果
+        </td>
+      </tr>
+    </table> 
     </form>
-    <br />
-    <p>本人承诺以上信息均为真实有效，如若造假或情况不实，自愿承担一切后果</p>
-    <br />
     <table width="608px" border="0">
       <tr>
         <td style="text-align: right">
