@@ -7,6 +7,7 @@
         table{
             margin: 0 auto;
         }
+        /* 保持表格居中 */
     </style>
   </head>
   <body>
@@ -52,6 +53,7 @@
                 <input type="text" name="verify" />
                 <span id="verify" style="background-color: gray;"></span>
                 <span><a href="javascript:reflesh();">看不清楚换一张</a></span>
+                <!-- 调用js函数实现验证码更换 -->
             </td>
         </tr>
         <tr>
@@ -122,6 +124,7 @@
             <td>
                 <input type="range" name="slary" id="slary" min="0" max="10000" step="100"/>
                 <span id="msg"></span>
+                <!-- 调用js函数实现显示滑块值 -->
             </td>
         </tr>
         <tr>
@@ -160,6 +163,7 @@
                 ></div>
                 <input type="file" id="test-image-file" name="test" />
                 <p id="test-file-info">没有选择文件</p>
+                <!-- 调用js函数实现照片预览 -->
             </td>
         </tr>
         <tr>
@@ -182,6 +186,7 @@
     </form>
   </body>
   <script>
+    /js函数实现显示滑块值/ 
     var msg = document.getElementById("msg");
     window.onload = function () {
       msg.innerHTML = document.getElementById("slary").value;
@@ -189,13 +194,14 @@
     document.getElementById("slary").onchange = function () {
       msg.innerHTML = this.value;
     };
+    /js函数实现验证码更换/ 
     const yzm = document.getElementById('verify')
         reflesh();
         function reflesh(){
           yzm.innerHTML = getcode();
           
         }
-        function getcode(){//随机验证码生成
+        function getcode(){
           const arr = ['a','b','c','d','e','f','g','h','i','j'
                       ,'k','l','m','n','o','p','q','r','s','t'
                       ,'u','v','w','x','y','z']
@@ -208,6 +214,7 @@
         }
   </script>
   <script>
+    /js函数实现照片预览/ 
     var fileInput = document.getElementById("test-image-file");
     var info = document.getElementById("test-file-info");
     var preview = document.getElementById("test-image-preview");
